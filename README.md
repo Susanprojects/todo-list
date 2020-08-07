@@ -5,6 +5,7 @@ The user is also able to mark a task as completed or done.
 
 ## Features
 - Create a todo item list with due time
+- The task added by the user is persisted on the user machine (via browser localStorage)
 - It shows remaining time for the task when creating
 - You can not select pre-date than today for any task
 - Tasks are shown in the current tasks section
