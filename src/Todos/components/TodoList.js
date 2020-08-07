@@ -11,7 +11,7 @@ const TodoList = ({ todos = [], onRemove, onCompleted }) => (
     <form className="list-wrapper">
         <TodoForm />
         <div className="todo-list-items-container">
-            Current Tasks : <br/><br/>
+           <label> Current Tasks : </label><br/><br/>
             {todos.map(todo => <TodoListItem todo={todo} 
             onRemove={onRemove}
             onCompleted={onCompleted}
