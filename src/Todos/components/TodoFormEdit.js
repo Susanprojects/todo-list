@@ -27,7 +27,6 @@ class TodoFormEdit extends Component {
     };
 
     handleTimeChange = (time) => {
-        console.log("changed time", time);
         this.setState({
             datePickerValue: new Date(time).toLocaleString()
         });
