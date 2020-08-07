@@ -1,0 +1,26 @@
+.todo-item-container{
+    padding: 5px;
+    background-color: #606366;
+    border: 1px solid #cccccc;
+    margin: 0.5rem 1rem;
+    border-radius: 10px;
+    min-height: 30px;
+}
+
+.btn-container{
+    float: right;
+}
+
+.todo-item-container button{
+    margin: 5px;
+}
+
+.todo-item-text{
+    padding: 5px;
+    width: 70%;
+    color: white;
+}
+
+.buttons-container{
+    float: left;
+}

@@ -1,0 +1,24 @@
+.create-task-form{
+    padding: 1rem;
+    background-color: #c0c6cc;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.todo-list-items-container{
+    margin-top: 1rem;
+}
+
+.create-btn-container{
+    text-align: center;
+    padding: 1rem;
+}
+
+.reminder-container{
+    padding: 1rem 0rem;
+}
+
+.list-wrapper{
+    padding: 1rem;
+}

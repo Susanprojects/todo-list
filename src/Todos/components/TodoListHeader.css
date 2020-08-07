@@ -1,0 +1,11 @@
+.header-layout {
+    color: #3c948b;
+    background-color: black;
+    height: 80px;
+}
+.header-info {
+    margin: auto;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
