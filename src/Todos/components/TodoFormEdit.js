@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DateFnsUtils from '@date-io/date-fns';
 import Grid from '@material-ui/core/Grid';
+import './TodoFormEdit.css';
 import 'date-fns';
 import {
     MuiPickersUtilsProvider,
@@ -16,6 +17,7 @@ class TodoFormEdit extends Component {
             currDateTimeStamp: Date.now(),
             minDate: new Date(),
             checked: true,
+            dueTime: ''
         };
     }
     handleDateChange = (date) => {
@@ -34,8 +36,8 @@ class TodoFormEdit extends Component {
         let secs = time
         let convertedDateValue = Date.parse(this.state.datePickerValue);
         let DifferenceBetweenDueAndToday = convertedDateValue - this.state.currDateTimeStamp;
-        let dueTime = this.getTimeRemaining(DifferenceBetweenDueAndToday)
-        console.log(dueTime)
+        this.state.dueTime = this.getTimeRemaining(DifferenceBetweenDueAndToday)
+        //console.log(dueTime)
     }
 
     getTimeRemaining(timeDifference) {
@@ -49,19 +51,19 @@ class TodoFormEdit extends Component {
         } else {
             let hours = minutes / 60;
             if(hours < 24){
-                return Math.round(hours+" hours remaining")
+                return Math.round(hours)+" hours remaining";
             } else {
                 let days = hours / 24;
                 if(days < 7) {
-                    return Math.round(days+ " days remaining")
+                    return Math.round(days)+ " days remaining";
                 } else {
                     let weeks = days / 7;
                     if(weeks < 5) {
-                        return Math.round(weeks+ " weeks remaining")
+                        return Math.round(weeks) + " weeks remaining";
                     } else {
                         let month = weeks / 5;
                         if(month < 12) {
-                            return Math.round(month + " months remaining")
+                            return Math.round(month) + " months remaining";
                         }
                     }
                 }
@@ -110,6 +112,7 @@ class TodoFormEdit extends Component {
                     checked={ this.state.checked } 
                     onChange={ this.handleChange } />
                     { content }
+    <label className="due-time-label">{this.state.dueTime}</label>
                 </div>
             </div>;
     }

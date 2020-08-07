@@ -3,6 +3,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project features a To-do list, wherein the user can add his/her tasks and also set a reminder for each task.
 The user is also able to mark a task as completed or done.
 
+## Features
+- Create a todo item list with due time
+- It shows remaining time for the task when creating
+- You can not select pre-date than today for any task
+- Tasks are shown in the current tasks section
+
 ## Available Scripts
 
 In the project directory, you can run:
