@@ -32,6 +32,7 @@ class TodoForm extends Component {
                 />
                 
                 <TodoFormEdit />
+                
                 <div className="create-btn-container">
                     <button
                     className="new-todo-button"
